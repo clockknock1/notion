@@ -1,20 +1,32 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/XCHUSDT/?exchange=OKEX" rel="noopener" target="_blank"><span class="blue-text">XCHUSDT Rates</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
-  "symbol": "OKEX:XCHUSDT",
-  "width": 350,
-  "height": 220,
-  "locale": "en",
-  "dateRange": "1D",
+  "symbols": [
+    {
+      "description": "BTC/USD",
+      "proName": "BITSTAMP:BTCUSD"
+    },
+    {
+      "description": "CHIA / USD",
+      "proName": "OKEX:XCHUSDT"
+    },
+    {
+      "description": "ETH / USD",
+      "proName": "COINBASE:ETHUSD"
+    },
+    {
+      "description": "BTC DOMINANCE",
+      "proName": "CRYPTOCAP:BTC.D"
+    }
+  ],
+  "showSymbolLogo": false,
   "colorTheme": "light",
-  "trendLineColor": "#37a6ef",
-  "underLineColor": "#E3F2FD",
   "isTransparent": false,
-  "autosize": false,
-  "largeChartUrl": ""
+  "displayMode": "adaptive",
+  "locale": "en"
 }
   </script>
 </div>
